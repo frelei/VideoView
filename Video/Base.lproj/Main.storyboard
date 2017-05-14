@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Video" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8j-66-enN" customClass="VideoView" customModule="Video" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="328"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.70980392160000005" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWA-N8-au6" customClass="VideoView" customModule="Video" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="327" width="375" height="340"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.058823529409999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LWA-N8-au6" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="1Ij-ov-bea"/>
+                            <constraint firstItem="O8j-66-enN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5BV-Eo-3uG"/>
+                            <constraint firstItem="O8j-66-enN" firstAttribute="leading" secondItem="LWA-N8-au6" secondAttribute="leading" id="GaH-6K-dpO"/>
+                            <constraint firstItem="O8j-66-enN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hpm-qk-dhr"/>
+                            <constraint firstAttribute="trailing" secondItem="O8j-66-enN" secondAttribute="trailing" id="bLs-cu-HWB"/>
+                            <constraint firstItem="O8j-66-enN" firstAttribute="trailing" secondItem="LWA-N8-au6" secondAttribute="trailing" id="bvi-hB-aw2"/>
+                            <constraint firstItem="LWA-N8-au6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="307" id="dIP-cu-989"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O8j-66-enN" secondAttribute="bottom" constant="339" id="yZs-Ka-cEr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="O8j-66-enN" id="VJa-VD-P6n"/>
+                        <outlet property="videoView2" destination="LWA-N8-au6" id="9SX-iG-EUo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
